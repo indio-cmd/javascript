@@ -1,6 +1,7 @@
 # notas-estudo
 Minhas notas de estudo do Téc SENAC 2026
 
+<<<<<<< HEAD
 markdown
 
 
@@ -188,3 +189,224 @@ buttonexemplo1.addEventListener('click', () => { exemplo1() })// nome da funçã
  
  
  
+=======
+//const nota = Number(prompt("Digite a primeira nota"))
+const nota2 = Number(prompt("Digite a segunda nota"))
+const nota3 = Number(prompt("Digite a terceira nota"))
+
+const media = (nota + nota2 + nota3) / 3
+console.log(media)
+
+
+if (media > 6) {
+    alert("Aprovado")
+} else if (media >= 5) {
+    alert("Recuperação")
+} else if (media <= 4) {
+    alert("Reprovado")
+} 
+
+
+// //Peça um número e informe se ele é positivo ou negativo.
+const numero = Number(prompt("Digite um numero"))
+if(numero >= 0) {
+    alert ("positivo")
+}else if(numero <= 0) {
+    alert("negativo")
+}else {
+    alert ("erro//")
+}
+
+//// 7. Peça uma distância em quilômetros e converta para metros e centímetros.
+
+const numero = Number(prompt("Digite uma distãncia em quilometros"))
+ const km = (numero*100000) 
+ const centimetros = ("Digite uma distãncia em centímetros")
+ const metros = (numero*1000)
+
+ alert("distância em metros e centímetros é: "  +km +" " + metros)
+
+
+ // //EXERCICIOS 2n
+function exercicios2 ()  {
+    const hora = Number(prompt("digite uma hora: "))
+    const valor = Number(prompt("digite um valor por hora: "))
+    alert("resultado de "+ hora + " * " + valor + " = " + (hora * valor ))
+}
+const buttonexercicio2 = document.getElementById("exercicio2")
+buttonexercicio2.addEventListener('click', () => {exercicios2() } )
+ 
+ 
+//exercicios3
+ 
+ 
+function exercicios3 () {
+    const peso1 = Number(prompt("digite o peso da pessoa 1: "))
+const peso2 = Number(prompt("digite o peso da pessoa 2: "))
+const peso3 = Number(prompt("digite o peso da pessoa 3: "))
+const peso4 = Number(prompt("digite o peso da pessoa 4: "))
+const peso5 = Number(prompt("digite o peso da pessoa 5: "))
+ 
+const resultado = (peso1 + peso2 + peso3 + peso4 + peso5) / 5
+ 
+alert(resultado)
+ 
+}
+ 
+const buttonexercicios3 = document.getElementById("exercicio3")
+buttonexercicios3.addEventListener('click', () => {exercicios3() } )
+ 
+//EXERCICIOS 4
+ 
+function exercicio4 () {
+//entrada
+// Peça uma temperatura em graus Celsius e converta para Fahrenheit
+//  usando a fórmula F = (9 * C + 160) / 5
+ 
+const numero = Number(prompt("digite o valor em graus celsius e converta para firehint"))
+ 
+//saida
+const media = (((9*numero )+ 160) / 5 )
+ alert(media)
+ 
+}
+ 
+const buttonexercicio4 = document.getElementById("exercicio4")
+buttonexercicio4.addEventListener('click', () => {exercicio4() } )
+ 
+ 
+///////////////////////////////////////////////////////////////////////////////////////////////
+function exercicio5 () {
+    alert("Exercicio 5 ")
+ 
+//Peça uma distância em milhas e converta para quilômetros.    (Dica: 1 milha = 1.60934 km)
+ 
+//entrada
+ 
+const numero = Number (prompt("digite a quantidade de milhas: "))
+ 
+const km = numero * 1.60934
+alert("a distancia em milhas é:"+ km )
+ 
+}
+ 
+const buttonexercicio5 = document.getElementById("exercicio5")
+buttonexercicio5.addEventListener('click', () => {exercicio5() } )
+ 
+////////////////////////////////////////////////////////////////////////////////
+function exercicio6 () {
+    alert("exercicio6 ")
+ 
+const Number = ( prompt ("Mostre a quantidades de tempo do evento "))
+const hora = dur/3600
+alert("a duração do evento em horas , munitos e segundos é ")
+ 
+}
+ 
+const buttonexercicio6 = document.getElementById("exercicio6")
+buttonexercicio6.addEventListener('click', () => {exercicio6() } )
+ 
+////////////////////////////////////////////////////////////////
+ 
+function exercicio7 () {
+    const numero = Number(prompt("digite uma distancia em quilometro"))
+const km = (numero*100000)
+const centímetros = ("digite uma distancia em centometros ")
+const metros = (numero*1000)
+alert("distancia em metros e centimetros é "  +km+" " + metros)
+}
+ 
+const buttonexercicio7 = document.getElementById("exercicio7")
+buttonexercicio7.addEventListener('click', () => {exercicio7() } )
+ 
+/////////////////////////////////////////////////////////////////////////
+ 
+function exercicio8 () {
+    const numero = Number(prompt("Digite o numero inteiro"))
+alert(`
+    0 x ${numero} = ${numero*0}
+    1 x ${numero} = ${numero*1}
+    2 x ${numero} = ${numero*2}
+    3 x ${numero} = ${numero*3}
+    4 x ${numero} = ${numero*4}
+    5 x ${numero} = ${numero*5}
+    6 x ${numero} = ${numero*6}
+    7 x ${numero} = ${numero*7}
+    8 x ${numero} = ${numero*8}
+    9 x ${numero} = ${numero*9}
+    10 x ${numero} = ${numero*10}
+    `)
+}
+ 
+const buttonexercicio8 = document.getElementById("exercicio8")
+buttonexercicio8.addEventListener('click', () => {exercicio8() } )
+
+
+////Peça dois números e uma operação matemática (+, -, *, /). Calcule e mostre o resultado da operação escolhida.
+const numero = Number(prompt("Digite um numero"))
+const numero2 = Number(prompt("Digite outro numero"))
+const operacao = prompt("Digite uma operação matemática")
+
+//condicao: esquerdo simbolo direito
+if(operacao === '*') {
+    alert(numero * numero2)
+}else if (operacao === '+') {
+ alert (numero + numero2)
+}else if (operacao === '-') {
+alert (numero - numero2)
+}else if (operacao === '/') {
+alert (numero / numero2)
+}
+
+
+////Peça o sexo da pessoa (H para homem, M para mulher) e a altura. Use as fórmulas para calcular o peso ideal:
+const sexo = (prompt("Digite o sexo H ou M"))
+const altura = Number(prompt("Digite uma altura"))
+
+if (sexo === 'H') {
+    alert (72.7 * altura) (- 58)
+} else if (sexo === 'M'){
+    alert (62.1 * altura) - 44.7
+}else {
+    alert("erro")
+}
+
+//<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=8, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="exemplo">
+    um titutlo qualquer
+  </header>
+
+  <main>
+    <h2>Minha página de Exercícios</h2>
+  <button id="exercicio1">Executar Exercício 1</button>
+  <button id="exercicio2">Executar Exercício 2</button>
+  <button id="exercicio3">Executar Exercício 3</button>
+  <button id="exercicio4">Executar Exercício 4</button>
+  <button id="exercicio5">Executar Exercício 5</button>
+  <button id="exercicio6">Executar Exercício 6</button>
+  <button id="exercicio7">Executar Exercício 7</button>
+  <button id="exercicio8">Executar Exercício 8</button>
+          
+  </main>
+
+  <footer  id="rodape">
+    todos os direitos reservados - Kaua alcantara - 2026
+  </footer>
+  <script src="./script/exercicio13.js"></script>
+</body>
+
+</html>
+
+
+//
+>>>>>>> 652a56d499ddb5c1178ea47ea73085277a01567b
